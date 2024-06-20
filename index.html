@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bericht</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#vervaagZichtbaar").click(function() {
+                    $("p").fadeIn();
+                });
+                $("#vervaagOnzichtbaar").click(function() {
+                    $("p").fadeOut();
+                });
+            });
+        </script>
+    </head>
+    <body style="background-color: aliceblue;">
+        <button id="vervaagZichtbaar" style="border-radius: 5px ; font-family: fantasy;">Hello</button>
+        <button id="vervaagOnzichtbaar" style="border-radius: 5px ; font-family: fantasy;">Goodbye</button>
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 31px; color: aqua;">Hello! <br>Have a good day!</p>
+    </body>
+</html>
